@@ -1,0 +1,487 @@
+/* embed google font */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
+/* Global Properties: start */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+span,
+p,
+th,
+td,
+a,
+address {
+    font-family: "Comic Neue";
+}
+
+.anchorOffset {
+    font-family: "Architects Daughter", cursive;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 2.5rem 3rem 1rem;
+    width: 14rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-image: url("../picture/title-background\ copy.png") fill 0 1 stretch;
+}
+
+.anchorOffset::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+/* Global Properties: end */
+
+/* Section Hero: start */
+.hero {
+    /* animation: changeBG infinite 16s; */
+    margin-top: 7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 33rem;
+    background-color: rgb(137, 231, 255);
+    background-image: url("../picture/paw-background-pink-top.png");
+    background-size: 26%;
+    background-repeat: repeat;
+}
+
+.book-now {
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 6rem 2rem 3rem;
+    z-index: 10;
+    border-image: url("../picture/dog-border2.png") fill 20 20 stretch;
+}
+
+#hero-bookNow {
+    left: 2rem;
+    color: rgb(0, 188, 212);
+}
+
+#hero-cloud {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 2rem;
+    right: 1rem;
+    top: 16rem;
+    width: 9rem;
+    font-size: 1rem;
+    border-image: url("../picture/cloud.png") fill 20 20 round;
+    background-size: 56%;
+}
+
+#hero-dog {
+    height: 27rem;
+    position: relative;
+    z-index: 2;
+    top: 13.5rem;
+    right: 1rem;
+}
+/* Section Hero: end */
+
+/* Section about: start */
+.about {
+    margin-top: 9rem;
+}
+
+#about-article {
+    padding: 1rem 0rem;
+    border: 2rem solid transparent;
+    border-image: url("../picture/dog-border.png") fill 400 500 round;
+}
+/* Section about: end */
+
+/* Section service: start */
+.service {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-items {
+    font-family: muli;
+    text-align: center;
+    padding: 1rem 0rem;
+    border: 2rem solid transparent;
+    border-image: url("../picture/dog-border.png") fill 400 500 round;
+}
+
+.service-items tr:nth-of-type(2n-1) {
+    background: rgb(218, 185, 148);
+}
+
+.service-items th {
+    text-transform: capitalize;
+    width: 25%;
+    font-size: 1.4rem;
+    border-bottom: 2px dotted black;
+}
+
+.service-items td {
+    max-width: 3rem;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+#service-items-bottomOfFirstTable {
+    padding-bottom: 2rem;
+}
+/* Section Service: end */
+
+/* Section Gallery: start */
+.gallery span {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+/* Section Gallery: end */
+
+/* Section Book: start */
+.book p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.book table {
+    padding: 12rem 4rem 6rem;
+    border-image: url("../picture/dog-border3.png") fill 200 1 stretch;
+    position: relative;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+#book-hours {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.book table th {
+    text-transform: capitalize;
+}
+/* Section Book: end */
+
+/* Section Contact: start */
+.contact,
+.contact-cards,
+.contact-cards-info,
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.contact,
+.contact-cards-info,
+.cards {
+    flex-direction: column;
+}
+
+#contact-cards-welcomeAndDog {
+    display: none;
+}
+
+.cards {
+    border: 1px solid black;
+    width: 80%;
+    height: 10rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+/* Section Contact: end */
+
+/* Footer: start */
+footer {
+    padding-top: 3rem;
+    height: max-content;
+    margin-top: 7rem;
+    background-color: rgb(218, 185, 148);
+    position: relative;
+}
+
+#footer-dogs {
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 16rem;
+    z-index: 11;
+}
+
+#footer-logo {
+    height: 6rem;
+    position: absolute;
+    top: 9rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    padding: 0 4rem;
+    position: relative;
+    margin: 14rem auto 0rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#footer-book {
+    top: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(217, 111, 124);
+}
+/* Footer: end */
+
+/* Keyframes: start */
+@keyframes changeBG {
+    0% {
+        background-image: url(../picture/dog1-removebg.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-color: cornflowerblue;
+    }
+
+    23% {
+        background-image: url(../picture/dog1-removebg.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-color: cornflowerblue;
+    }
+
+    24% {
+        background: white;
+    }
+
+    25% {
+        background-image: url(../picture/dog2-removebg.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-color: gold;
+    }
+
+    48% {
+        background-image: url(../picture/dog2-removebg.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-color: gold;
+    }
+
+    49% {
+        background: white;
+    }
+
+    50% {
+        background-image: url(../picture/dog1-removebg.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-color: plum;
+    }
+
+    73% {
+        background-image: url(../picture/dog1-removebg.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-color: plum;
+    }
+
+    74% {
+        background: white;
+    }
+
+    75% {
+        background-image: url(../picture/dog2-removebg.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-color: yellowgreen;
+    }
+
+    98% {
+        background-image: url(../picture/dog2-removebg.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-color: yellowgreen;
+    }
+
+    99% {
+        background: white;
+    }
+
+    100% {
+        background-image: url(../picture/dog1-removebg.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-color: cornflowerblue;
+    }
+}
+/* Keyframes: end */
+
+/* Media Query: start */
+@media only screen and (min-width: 550px) {
+    .hero {
+        width: 100%;
+        height: 33rem;
+    }
+
+    #hero-bookNow {
+        left: 9%;
+        font-size: 2rem;
+        padding: 6rem 2rem 3rem;
+    }
+
+    #hero-cloud {
+        padding: 3rem;
+        top: 11.7rem;
+        right: 1rem;
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+
+    #hero-dog {
+        height: 32rem;
+        top: 10rem;
+        right: 9%;
+    }
+
+    .book table {
+        padding: 12rem 8rem 6rem;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+
+    footer {
+        height: 38rem;
+    }
+
+    #footer-dogs {
+        width: 21rem;
+        top: -7rem;
+    }
+
+    #footer-logo {
+        height: 6rem;
+        top: 10rem;
+    }
+
+    #footer-links {
+        margin-top: 12rem;
+        height: 70%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #hero-cloud {
+        position: relative;
+        top: 2rem;
+        right: -12rem;
+        padding: 4rem 5.5rem 5rem;
+        width: 12rem;
+        font-size: 1.8rem;
+    }
+
+    #hero-dog {
+        height: 38rem;
+        top: -8rem;
+        right: 9%;
+    }
+
+    #hero-bookNow {
+        left: 17%;
+    }
+
+    #contact-cards-welcomeAndDog {
+        display: initial;
+        height: 100%;
+    }
+
+    .contact-cards,
+    .cards {
+        width: 80%;
+    }
+
+    #contact-cards-welcome {
+        position: relative;
+        left: 32%;
+        padding: 2rem 3rem;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        border-image: url("../picture/cloud2.png") fill 20 20 stretch;
+    }
+
+    #contact-cards-dog {
+        width: 9rem;
+        top: 1.5rem;
+        right: 3rem;
+        position: relative;
+    }
+
+    footer {
+        height: 15rem;
+        margin-top: 10rem;
+    }
+
+    #footer-dogs {
+        width: 30rem;
+        top: -10rem;
+    }
+
+    #footer-logo {
+        height: 8rem;
+        top: 4rem;
+    }
+
+    #footer-links {
+        max-width: 1000px;
+        height: 80%;
+        padding: 0;
+        position: static;
+        margin-top: 0;
+        text-align: start;
+    }
+
+    #footer-book {
+        right: 3rem;
+        padding-bottom: 3rem;
+        left: unset;
+        transform: unset;
+    }
+}
