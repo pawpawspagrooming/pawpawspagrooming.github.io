@@ -1,2 +1,2 @@
 # Project-Pawpaw
-My first freelance work. To build a website for a pet spa &amp; grooming store.
+A website for the pet grooming store, Pawpaw Spa &amp; Grooming.
