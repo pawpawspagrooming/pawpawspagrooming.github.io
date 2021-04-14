@@ -5,8 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paw Paw Spa & Grooming</title>
+    <meta name="description"
+        content="Pawpaw has professional grade pet grooming and massage services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta name="keywords"
+        content="pawpaw, pawpaw spa & grooming, edmonton pawpaw, pet grooming, pet spa, pet supply, pet food, edmonton pet, edmonton grooming, edmonton pet supply, edmonton pet food">
+    <meta property="og:site_name" content="pawpaw">
+    <meta property="og:url" content="http://pawpawpetspa.com/">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Pawpaw has professional grade pet grooming and massage services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home">
+    <meta name="twitter:description"
+        content="Pawpaw has professional grade pet grooming and massage services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta property="og:image"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:secure_url"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/carousel-index.css">
     <script src="./script/main.js" defer></script>
 </head>
 
@@ -18,7 +39,6 @@
 
         <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
         <div class="nav-desktop">
-            <a href="#about">about us</a>
             <a href="#book">book now</a>
             <a href="#service">our services</a>
             <a href="#gallery">gallery</a>
@@ -33,7 +53,6 @@
                 <div id="nav-mobile-button-div4"></div>
             </button>
             <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
-                <li><a href="#about">about us</a></li>
                 <li><a href="#book">book now</a></li>
                 <li><a href="#service">our service</a></li>
                 <li><a href="#gallery">gallery</a></li>
@@ -43,33 +62,51 @@
     </nav>
 
     <main>
-        <section class="hero">
-            <a id="hero-bookNow" class="book-now" href="#book">book now</a>
-            <div id="hero-cloud">
-                <span>Grooming</span>
-                <span>Spa</span>
-                <span>& Treats!</span>
-            </div>
-            <img id="hero-dog" src="./picture/dog-model3.png">
-        </section>
-
-        <section class="about">
-            <h1 class="anchorOffset" id="about">about us</h1>
-            <article id="about-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis mollitia
-                ratione nisi quam,
-                temporibus maiores vero eius ex quisquam fugiat dignissimos fuga ducimus corrupti perspiciatis atque
-                possimus dolorem nam esse, iusto delectus facilis aut. Autem illo voluptas neque qui dignissimos.
-            </article>
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="1" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+                        <span class="carousel__slogan">Come for a spa</span>
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="2" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <span class="carousel__slogan">Enjoy a luxurious bath</span>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3" tabindex="3" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <span class="carousel__slogan">Get groomed and look good!</span>
+                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                </ol>
+            </aside>
         </section>
 
         <section class="service">
             <h1 class="anchorOffset" id="service">our services</h1>
             <table class="service-items">
                 <tr>
-                    <th>bath & tidy</th>
+                    <th>bath</th>
                     <th>price</th>
                     <th>full grooming</th>
-                    <th>price (strating price)</th>
+                    <th>price (from)</th>
                 </tr>
                 <tr>
                     <td>x small</td>
@@ -108,62 +145,59 @@
                     <td>$150</td>
                 </tr>
                 <tr>
-                    <td colspan="4" id="service-items-bottomOfFirstTable">Service prices may change depending on coat
+                    <td colspan="4" id="service-items-bottomOfFirstTable"><br>*Full grooming includes bath, grooming,
+                        ear
+                        cleaning, nail trimming, annal glance, and cleaning inside paws.<br><br>*Service prices may
+                        change
+                        depending on coat
                         conditions such as matting.</td>
                 </tr>
+            </table>
+            <table id="services__other-services">
                 <tr>
-                    <th colspan="2">other services</th>
-                    <th colspan="2">price</th>
+                    <th id="other-services__title" colspan="2">additional services</th>
                 </tr>
                 <tr>
-                    <td colspan="2">teeth brushing</td>
-                    <td colspan="2">$8</td>
+                    <td><img src="./picture/paw.png"><span>teeth brushing</span></td>
+                    <td>$8</td>
                 </tr>
                 <tr>
-                    <td colspan="2">pawdicure</td>
-                    <td colspan="2">$10</td>
+                    <td><img src="./picture/paw.png"><span>pawdicure</span></td>
+                    <td>$10</td>
                 </tr>
                 <tr>
-                    <td colspan="2">ear cleaning</td>
-                    <td colspan="2">$15</td>
+                    <td><img src="./picture/paw.png"><span>ear cleaning</span></td>
+                    <td>$15</td>
                 </tr>
                 <tr>
-                    <td colspan="2">nail trim</td>
-                    <td colspan="2">$10 or $22 for nail clipping, grinding, and complementary paw shave</td>
+                    <td><img src="./picture/paw.png"><span>nail trim</span></td>
+                    <td id="other-services__nail-trim">$10 or $22 for nail clipping, grinding, and complementary paw
+                        shave</td>
                 </tr>
                 <tr>
-                    <td colspan="2">hair treatment</td>
-                    <td colspan="2">$20</td>
+                    <td><img src="./picture/paw.png"><span>hair treatment</span></td>
+                    <td>$20</td>
                 </tr>
                 <tr>
-                    <td colspan="2">ozone/milk/essential oil spa</td>
-                    <td colspan="2">starting from $25</td>
-                </tr>
-                <tr>
-                    <td colspan="4">Store will also be selling dog treats, food, toys, and other products.</td>
+                    <td><img src="./picture/paw.png"><span>ozone/milk/essential oil spa</span></td>
+                    <td>starting from $25</td>
                 </tr>
             </table>
+            <span id="other-services__note">*Store will also be selling dog treats, food, toys, and other
+                products.</span>
         </section>
 
         <section class="gallery">
             <h1 class="anchorOffset" id="gallery">gallery</h1>
-            <span>coming soon...</span>
+            <span>Coming soon...</span>
         </section>
 
         <section class="book">
             <h1 class="anchorOffset" id="book">book now</h1>
             <p>
-                Please call us at <a href="tel:1-780-xxx-xxxx">780-xx-xxxx</a> to book your appointment.
+                Please call us at <a href="tel:1-780-xxx-xxxx">780-xxx-xxxx</a> to book your appointment.
             </p>
             <table>
-                <tr>
-                    <td id="book-hours" colspan="2">
-                        Our business hours:
-                    </td>
-                </tr>
-                <tr>
-                    <td> </td>
-                </tr>
                 <tr>
                     <th>monday</th>
                     <td>9am - 5pm</td>
@@ -198,10 +232,6 @@
         <section class="contact">
             <h1 class="anchorOffset" id="contact">contact us</h1>
             <div class="contact-cards">
-                <div id="contact-cards-welcomeAndDog">
-                    <span id="contact-cards-welcome">welcome!</span>
-                    <img id="contact-cards-dog" src="./picture/dog1-removebg.png" alt="">
-                </div>
                 <div class="contact-cards-info">
                     <a class="contact-cards-info-call cards" href="tel:1-780-xxx-xxxx" target="_blank"
                         rel="noopener noreferrer">
@@ -212,7 +242,7 @@
                                 d="M9.366 10.682a10.556 10.556 0 0 0 3.952 3.952l.884-1.238a1 1 0 0 1 1.294-.296 11.422 11.422 0 0 0 4.583 1.364 1 1 0 0 1 .921.997v4.462a1 1 0 0 1-.898.995c-.53.055-1.064.082-1.602.082C9.94 21 3 14.06 3 5.5c0-.538.027-1.072.082-1.602A1 1 0 0 1 4.077 3h4.462a1 1 0 0 1 .997.921A11.422 11.422 0 0 0 10.9 8.504a1 1 0 0 1-.296 1.294l-1.238.884zm-2.522-.657l1.9-1.357A13.41 13.41 0 0 1 7.647 5H5.01c-.006.166-.009.333-.009.5C5 12.956 11.044 19 18.5 19c.167 0 .334-.003.5-.01v-2.637a13.41 13.41 0 0 1-3.668-1.097l-1.357 1.9a12.442 12.442 0 0 1-1.588-.75l-.058-.033a12.556 12.556 0 0 1-4.702-4.702l-.033-.058a12.442 12.442 0 0 1-.75-1.588z"
                                 fill="#000" />
                         </svg>
-                        <span>call us at 780-xxx-xxxx</span>
+                        <span>Call us at 780-xxx-xxxx</span>
                     </a>
 
                     <a class="contact-cards-info-address cards" href="https://goo.gl/maps/9vw61DYwXwEnC16X8"
@@ -224,9 +254,13 @@
                                 d="M12 20.9l4.95-4.95a7 7 0 1 0-9.9 0L12 20.9zm0 2.828l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
                                 fill="#000" />
                         </svg>
-                        <span>visit us at</span>
-                        <address>6465 Cartmell Place SW T6W 4V4</address>
+                        <span>Visit our store at:</span>
+                        <address>6465 Cartmell Place SW<br>Edmonton, AB T6W 4V4</address>
                     </a>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1053.7973590844288!2d-113.57109621106763!3d53.396726968268055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539ff60692bb76bd%3A0x44c03516eb67577f!2sCartmell%20Pl%2C%20Edmonton%2C%20AB%20T6W%203L5!5e0!3m2!1sen!2sca!4v1618377767241!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- set width and height to fit mobile width -->
                 </div>
             </div>
         </section>
@@ -235,15 +269,13 @@
     <footer>
         <img id="footer-dogs" src="./picture/dog-footer.png">
         <div id="footer-links">
-            <a href="#about">about us</a>
             <a href="#service">our services</a>
             <a href="#gallery">gallery</a>
             <a href="https://www.freeprivacypolicy.com/live/36eae59f-bba0-4c42-b637-d2606a8f3684" target="_blank"
-            rel="noopener noreferrer">privacy policy</a>
+                rel="noopener noreferrer">privacy policy</a>
             <a href="./files-for-download/New Client Profile & Agreement.pdf" download="">download service agreement</a>
         </div>
-        <img id="footer-logo" src="picture/full logo.png">
-        <a id="footer-book" class="book-now" href="#book">book now</a>
+        <img id="footer-logo" src="./picture/full logo.png">
     </footer>
 </body>
 
