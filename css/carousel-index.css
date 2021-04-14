@@ -90,7 +90,7 @@ li {
 }
 
 .carousel__slogan {
-    font-family: 'Satisfy', cursive;
+    font-family: "Satisfy", cursive;
     text-overflow: clip;
     text-align: center;
     color: white;
@@ -177,7 +177,7 @@ li {
 .carousel__navigation {
     position: absolute;
     right: 0;
-    bottom: -2rem;
+    bottom: -2.6rem;
     left: 0;
     text-align: center;
 }
