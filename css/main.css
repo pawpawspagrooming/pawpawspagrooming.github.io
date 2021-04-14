@@ -261,6 +261,8 @@ footer {
     padding: 2rem 0 1rem;
     height: max-content;
     background-color: #81d8d0;
+    margin-top: 120px;
+    position: relative;
 }
 
 #footer-logo {
@@ -278,6 +280,12 @@ footer {
     position: relative;
     margin: 0rem auto;
     text-align: center;
+}
+
+#footer__dog {
+    position: absolute;
+    top: -155px;
+    left: calc(50% - 125px);
 }
 
 footer a {
