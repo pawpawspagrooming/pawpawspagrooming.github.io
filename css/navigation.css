@@ -20,6 +20,7 @@ nav a:hover {
 
 nav .logo img {
     width: 8rem;
+    margin-left: 2rem;
 }
 
 .nav-desktop {
@@ -58,8 +59,8 @@ nav .logo img {
 
 .nav-mobile-button {
     position: absolute;
-    right: 1rem;
-    top: 0rem;
+    right: 0rem;
+    top: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

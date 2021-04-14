@@ -1,10 +1,12 @@
 /* embed google font */
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Satisfy&display=swap");
 
 /* Global Properties: start */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: calc(6rem + 20px);
 }
 
 body {
@@ -18,33 +20,23 @@ th,
 td,
 a,
 address {
-    font-family: "Comic Neue";
+    font-family: "Open Sans", sans-serif;
 }
 
 .anchorOffset {
-    font-family: "Architects Daughter", cursive;
+    font-family: "Satisfy", cursive;
     text-transform: capitalize;
     text-align: center;
+    letter-spacing: 2px;
     font-size: 2rem;
-    margin: 0 auto;
-    padding: 2.5rem 3rem 1rem;
+    margin: 1rem auto 0;
+    padding: 2.5rem 3rem 0;
     width: 14rem;
     height: 4rem;
-    margin-bottom: 1rem;
-    border-image: url("../picture/title-background\ copy.png") fill 0 1 stretch;
-}
-
-.anchorOffset::before {
-    display: block;
-    content: " ";
-    margin-top: -100px;
-    height: 100px;
-    visibility: hidden;
-    pointer-events: none;
 }
 
 section {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 /* Global Properties: end */
 
@@ -59,9 +51,9 @@ section {
     justify-content: space-between;
     width: 100%;
     height: 33rem;
-    background-color: rgb(137, 231, 255);
+    background-color: rgb(202, 242, 253);
     background-image: url("../picture/paw-background-pink-top.png");
-    background-size: 26%;
+    background-size: 22rem;
     background-repeat: repeat;
 }
 
@@ -73,12 +65,12 @@ section {
     text-decoration: none;
     padding: 6rem 2rem 3rem;
     z-index: 10;
-    border-image: url("../picture/dog-border2.png") fill 20 20 stretch;
+    border-image: url("../picture/dog-border2\ copy\ 2.png") fill 20 20 stretch;
 }
 
 #hero-bookNow {
     left: 2rem;
-    color: rgb(0, 188, 212);
+    color: #81d8d0;
 }
 
 #hero-cloud {
@@ -103,37 +95,26 @@ section {
 }
 /* Section Hero: end */
 
-/* Section about: start */
-.about {
-    margin-top: 9rem;
-}
-
-#about-article {
-    padding: 1rem 0rem;
-    border: 2rem solid transparent;
-    border-image: url("../picture/dog-border.png") fill 400 500 round;
-}
-/* Section about: end */
-
 /* Section service: start */
 .service {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .service-items {
-    font-family: muli;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
     padding: 1rem 0rem;
-    border: 2rem solid transparent;
-    border-image: url("../picture/dog-border.png") fill 400 500 round;
+    width: 100%;
 }
 
 .service-items tr:nth-of-type(2n-1) {
-    background: rgb(218, 185, 148);
+    background: #ffe3ea;
 }
 
 .service-items th {
+    font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
     width: 25%;
     font-size: 1.4rem;
@@ -150,8 +131,55 @@ section {
     font-weight: bolder;
 }
 
+#services__other-services {
+    width: 100%;
+    text-transform: capitalize;
+}
+
+#other-services__nail-trim {
+    text-transform: lowercase;
+}
+
+#other-services__title {
+    height: 3rem;
+    vertical-align: super;
+}
+
+#services__other-services td {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#services__other-services td:nth-of-type(2n-1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#services__other-services td:nth-of-type(2n) {
+    padding-left: 0rem;
+}
+
+#services__other-services td img {
+    margin-right: 7px;
+    transform: translateY(4px);
+}
+
+#services__other-services th {
+    font-size: 1.5rem;
+}
+
 #service-items-bottomOfFirstTable {
     padding-bottom: 2rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#other-services__note {
+    margin-top: 10px;
+    padding-left: 3rem;
+    font-style: italic;
 }
 /* Section Service: end */
 
@@ -160,6 +188,7 @@ section {
     display: block;
     width: max-content;
     margin: 0 auto;
+    font-size: 1.2rem;
 }
 /* Section Gallery: end */
 
@@ -168,7 +197,7 @@ section {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .book table {
@@ -207,6 +236,7 @@ section {
 .contact-cards-info,
 .cards {
     flex-direction: column;
+    color: black;
 }
 
 #contact-cards-welcomeAndDog {
@@ -214,11 +244,15 @@ section {
 }
 
 .cards {
-    border: 1px solid black;
     width: 80%;
     height: 10rem;
     align-items: center;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+address {
+    font-style: normal;
 }
 /* Section Contact: end */
 
@@ -227,7 +261,7 @@ footer {
     padding-top: 3rem;
     height: max-content;
     margin-top: 7rem;
-    background-color: rgb(218, 185, 148);
+    background-color: #81d8d0;
     position: relative;
 }
 
@@ -241,34 +275,26 @@ footer {
 }
 
 #footer-logo {
-    height: 6rem;
-    position: absolute;
-    top: 9rem;
+    height: 4rem;
+    position: relative;
     left: 50%;
     transform: translate(-50%);
 }
 
 #footer-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     height: 80%;
-    padding: 0 4rem;
     position: relative;
-    margin: 14rem auto 0rem;
+    margin: 0rem auto;
     text-align: center;
 }
 
 footer a {
+    color: black;
     text-decoration: none;
     text-transform: capitalize;
-}
-
-#footer-book {
-    top: 0rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(217, 111, 124);
 }
 /* Footer: end */
 
@@ -382,14 +408,24 @@ footer a {
         right: 9%;
     }
 
+    /* adjust */
+    #services__other-services {
+        width: 40rem;
+        text-transform: capitalize;
+    }
+
+    #services__other-services td:nth-of-type(2n-1) {
+        padding-left: 6rem;
+    }
+
+    #services__other-services td:nth-of-type(2n) {
+        padding-left: 3rem;
+    }
+
     .book table {
         padding: 12rem 8rem 6rem;
         margin: 0 auto;
         font-size: 1.3rem;
-    }
-
-    footer {
-        height: 38rem;
     }
 
     #footer-dogs {
@@ -399,11 +435,10 @@ footer a {
 
     #footer-logo {
         height: 6rem;
-        top: 10rem;
+        /* top: 10rem; */
     }
 
     #footer-links {
-        margin-top: 12rem;
         height: 70%;
     }
 }
@@ -419,13 +454,13 @@ footer a {
     }
 
     #hero-dog {
-        height: 38rem;
-        top: -8rem;
-        right: 9%;
+        height: 40rem;
+        top: -10rem;
+        right: 5%;
     }
 
     #hero-bookNow {
-        left: 17%;
+        left: 16%;
     }
 
     #contact-cards-welcomeAndDog {
@@ -455,23 +490,16 @@ footer a {
     }
 
     footer {
-        height: 15rem;
         margin-top: 10rem;
     }
 
-    #footer-dogs {
-        width: 30rem;
-        top: -10rem;
-    }
-
     #footer-logo {
-        height: 8rem;
-        top: 4rem;
+        height: 5rem;
+        margin: 1rem 0;
     }
 
     #footer-links {
         max-width: 1000px;
-        height: 80%;
         padding: 0;
         position: static;
         margin-top: 0;
@@ -479,7 +507,7 @@ footer a {
     }
 
     #footer-book {
-        right: 3rem;
+        right: 20%;
         padding-bottom: 3rem;
         left: unset;
         transform: unset;
