@@ -136,8 +136,8 @@ section {
     text-transform: capitalize;
 }
 
-#other-services__nail-trim {
-    text-transform: lowercase;
+.other-services__not-capital {
+    text-transform: none;
 }
 
 #other-services__title {
@@ -258,20 +258,9 @@ address {
 
 /* Footer: start */
 footer {
-    padding-top: 3rem;
+    padding: 3rem 0;
     height: max-content;
-    margin-top: 7rem;
     background-color: #81d8d0;
-    position: relative;
-}
-
-#footer-dogs {
-    position: absolute;
-    top: -5rem;
-    left: 50%;
-    transform: translate(-50%);
-    width: 16rem;
-    z-index: 11;
 }
 
 #footer-logo {
@@ -428,18 +417,13 @@ footer a {
         font-size: 1.3rem;
     }
 
-    #footer-dogs {
-        width: 21rem;
-        top: -7rem;
-    }
-
     #footer-logo {
         height: 6rem;
-        /* top: 10rem; */
     }
 
     #footer-links {
         height: 70%;
+        padding-bottom: 2rem;
     }
 }
 
@@ -489,13 +473,8 @@ footer a {
         position: relative;
     }
 
-    footer {
-        margin-top: 10rem;
-    }
-
     #footer-logo {
         height: 5rem;
-        margin: 1rem 0;
     }
 
     #footer-links {
