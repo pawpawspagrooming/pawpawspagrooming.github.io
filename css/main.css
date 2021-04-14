@@ -6,7 +6,7 @@
 /* Global Properties: start */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: calc(6rem + 20px);
+    scroll-padding-top: 93px;
 }
 
 body {
@@ -23,7 +23,7 @@ address {
     font-family: "Open Sans", sans-serif;
 }
 
-.anchorOffset {
+h1 {
     font-family: "Satisfy", cursive;
     text-transform: capitalize;
     text-align: center;
