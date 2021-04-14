@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     letter-spacing: 2px;
     font-size: 2rem;
-    margin: 1rem auto 0;
+    margin: 2rem auto 0;
     padding: 2.5rem 3rem 0;
     width: 14rem;
     height: 4rem;
@@ -39,61 +39,6 @@ section:not(:last-of-type) {
     margin-bottom: 2rem;
 }
 /* Global Properties: end */
-
-/* Section Hero: start */
-.hero {
-    /* animation: changeBG infinite 16s; */
-    margin-top: 7rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 33rem;
-    background-color: rgb(202, 242, 253);
-    background-image: url("../picture/paw-background-pink-top.png");
-    background-size: 22rem;
-    background-repeat: repeat;
-}
-
-.book-now {
-    position: absolute;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    text-decoration: none;
-    padding: 6rem 2rem 3rem;
-    z-index: 10;
-    border-image: url("../picture/dog-border2\ copy\ 2.png") fill 20 20 stretch;
-}
-
-#hero-bookNow {
-    left: 2rem;
-    color: #81d8d0;
-}
-
-#hero-cloud {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 2rem;
-    right: 1rem;
-    top: 16rem;
-    width: 9rem;
-    font-size: 1rem;
-    border-image: url("../picture/cloud.png") fill 20 20 round;
-    background-size: 56%;
-}
-
-#hero-dog {
-    height: 27rem;
-    position: relative;
-    z-index: 2;
-    top: 13.5rem;
-    right: 1rem;
-}
-/* Section Hero: end */
 
 /* Section service: start */
 .service {
@@ -105,12 +50,12 @@ section:not(:last-of-type) {
 .service-items {
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    padding: 1rem 0rem;
+    padding: 0rem 0rem 1rem;
     width: 100%;
 }
 
 .service-items tr:nth-of-type(2n-1) {
-    background: #ffe3ea;
+    background: #81d8d0;
 }
 
 .service-items th {
