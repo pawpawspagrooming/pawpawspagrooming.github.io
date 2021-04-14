@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     letter-spacing: 2px;
     font-size: 2rem;
-    margin: 2rem auto 0;
+    margin: 1rem auto 0;
     padding: 2.5rem 3rem 0;
     width: 14rem;
     height: 4rem;
@@ -41,6 +41,10 @@ section:not(:last-of-type) {
 /* Global Properties: end */
 
 /* Section service: start */
+#service {
+    margin-top: 3rem;
+}
+
 .service {
     display: flex;
     flex-direction: column;
