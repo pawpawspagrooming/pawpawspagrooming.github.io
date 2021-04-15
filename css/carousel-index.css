@@ -72,12 +72,12 @@ li {
     margin: 6rem auto 30px;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
-    max-width: 80rem;
-    height: 29rem;
+    width: 100vw;
+    height: calc(75vh - 1rem);
 }
 
 .carousel__viewport {
-    height: 30rem;
+    height: 75vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -97,7 +97,6 @@ li {
     letter-spacing: 2px;
     font-size: 2.5rem;
     font-weight: 550;
-    /* text-transform: uppercase; */
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -119,17 +118,17 @@ li {
 
 #carousel__slide1 {
     background-image: url("../picture/dog-spa.JPG");
-    background-position: center;
+    background-position: 50% 20%;
 }
 
 #carousel__slide2 {
     background-image: url("../picture/dog-bath.JPG");
-    background-position: 25% 50%;
+    background-position: 55% 20%;
 }
 
 #carousel__slide3 {
     background-image: url("../picture/dog-grooming.JPG");
-    background-position: 60% 0%;
+    background-position: 58% 0%;
 }
 
 .carousel__slide:before {
@@ -154,8 +153,6 @@ li {
     .carousel__snapper {
         animation-name: tonext, snap;
         animation-timing-function: ease;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
     }
 
     .carousel__slide:last-child .carousel__snapper {
@@ -203,7 +200,7 @@ li {
 .carousel__next {
     position: absolute;
     top: calc(50% - 10rem);
-    width: 5rem;
+    width: 6rem;
     height: 20rem;
     font-size: 0;
     outline: 0;
@@ -215,4 +212,14 @@ li {
 
 .carousel__next {
     right: 0rem;
+}
+
+@media only screen and (min-width: 700px) {
+    .carousel {
+        height: calc(85vh - 1rem);
+    }
+
+    .carousel__viewport {
+        height: 85vh;
+    }
 }
