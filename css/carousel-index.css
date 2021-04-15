@@ -114,6 +114,7 @@ li {
     background-size: cover;
     background-color: rgba(88, 88, 88, 0.3);
     background-blend-mode: soft-light;
+    outline: none;
 }
 
 #carousel__slide1 {
