@@ -130,6 +130,7 @@ section:not(:last-of-type) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    max-width: 15rem;
 }
 
 #services__other-services td:nth-of-type(2n) {
@@ -155,11 +156,14 @@ section:not(:last-of-type) {
     margin-top: 10px;
     font-style: italic;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 #other-services__shampoo-list li {
+    font-family: "Open Sans", sans-serif;
     list-style: circle;
     margin-bottom: 0.5rem;
+    margin-left: 5%;
 }
 /* Section Service: end */
 
@@ -272,7 +276,13 @@ footer a {
     color: black;
     text-decoration: none;
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#copyright {
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
 }
 /* Footer: end */
 
@@ -386,7 +396,6 @@ footer a {
         right: 9%;
     }
 
-    /* adjust */
     #services__other-services {
         width: 40rem;
         text-transform: capitalize;
@@ -406,79 +415,7 @@ footer a {
         font-size: 1.3rem;
     }
 
-    #footer-logo {
-        height: 6rem;
-    }
-
     #footer-links {
         flex-direction: row;
-        height: 70%;
-        padding-bottom: 2rem;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    #hero-cloud {
-        position: relative;
-        top: 2rem;
-        right: -12rem;
-        padding: 4rem 5.5rem 5rem;
-        width: 12rem;
-        font-size: 1.8rem;
-    }
-
-    #hero-dog {
-        height: 40rem;
-        top: -10rem;
-        right: 5%;
-    }
-
-    #hero-bookNow {
-        left: 16%;
-    }
-
-    #contact-cards-welcomeAndDog {
-        display: initial;
-        height: 100%;
-    }
-
-    .contact-cards,
-    .cards {
-        width: 80%;
-    }
-
-    #contact-cards-welcome {
-        position: relative;
-        left: 32%;
-        padding: 2rem 3rem;
-        font-size: 1.5rem;
-        text-transform: capitalize;
-        border-image: url("../picture/cloud2.png") fill 20 20 stretch;
-    }
-
-    #contact-cards-dog {
-        width: 9rem;
-        top: 1.5rem;
-        right: 3rem;
-        position: relative;
-    }
-
-    #footer-logo {
-        height: 5rem;
-    }
-
-    #footer-links {
-        max-width: 1000px;
-        padding: 0;
-        position: static;
-        margin-top: 0;
-        text-align: start;
-    }
-
-    #footer-book {
-        right: 20%;
-        padding-bottom: 3rem;
-        left: unset;
-        transform: unset;
     }
 }
