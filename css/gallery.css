@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(74, 74, 74);
+    margin: 0;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 8rem 0 0;
+}
+
+h1,
+h2 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 49px;
+}
+
+.images {
+    display: grid;
+    margin: 2rem 4px 2rem 4px;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px 5px;
+    width: calc(100vw - 32px);
+}
+
+.images span {
+    font-family: "Satisfy", cursive;
+    font-size: 1.5rem;
+    place-self: center;
+}
+
+.image {
+    width: calc((100vw - 18px) / 3);
+    height: calc((100vw - 18px) / 3);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.image:nth-of-type(1) {
+    background-image: url(../picture/gallery-dog1.jpeg);
+}
+
+.image:nth-of-type(2) {
+    background-image: url(../picture/gallery-dog2.jpeg);
+}
+
+.image:nth-of-type(3) {
+    background-image: url(../picture/gallery-dog3.jpeg);
+}
+
+.image:nth-of-type(4) {
+    background-image: url(../picture/gallery-dog4.jpeg);
+}
+
+.image:nth-of-type(5) {
+    background-image: url(../picture/gallery-dog5.jpeg);
+}
+
+.image:nth-of-type(6) {
+    background-image: url(../picture/gallery-dog6.jpeg);
+}
+
+@media only screen and (min-width: 900px) {
+    .images {
+        grid-template-columns: repeat(4, 1fr);
+        width: calc(100vw - 2rem);
+    }
+
+    .image {
+        width: calc((100vw - 23px) / 4);
+        height: calc((100vw - 23px) / 4);
+    }
+}
