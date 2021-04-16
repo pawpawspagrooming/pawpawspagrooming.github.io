@@ -40,6 +40,30 @@ section:not(:last-of-type) {
 }
 /* Global Properties: end */
 
+/* Section promotion: start */
+.promotion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#exit {
+    top: calc(50% - 40vh + 5px);
+}
+
+#promotion__card {
+    height: 80vh;
+    position: absolute;
+    top: calc(50% - 40vh);
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Section promotion: end */
+
 /* Section service: start */
 #service {
     margin-top: 3rem;
@@ -83,6 +107,8 @@ section:not(:last-of-type) {
 #services__other-services {
     width: 100%;
     text-transform: capitalize;
+    border-collapse: separate;
+    border-spacing: 0 1em;
 }
 
 .other-services__not-capital {
@@ -125,10 +151,15 @@ section:not(:last-of-type) {
     font-size: 1rem;
 }
 
-#other-services__note {
+#other-services__shampoo {
     margin-top: 10px;
-    padding-left: 3rem;
     font-style: italic;
+    text-align: center;
+}
+
+#other-services__shampoo-list li {
+    list-style: circle;
+    margin-bottom: 0.5rem;
 }
 /* Section Service: end */
 

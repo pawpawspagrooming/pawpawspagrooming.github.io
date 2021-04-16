@@ -45,47 +45,6 @@ li {
     visibility: hidden;
 }
 
-#carousel__exit {
-    width: 2.5rem;
-    height: 2.5rem;
-    border: none;
-    border-radius: 100%;
-    background-color: rgba(43, 43, 43, 0.7);
-    z-index: 2;
-    position: absolute;
-    right: -0.6rem;
-    top: -1rem;
-}
-
-#carousel__exit:hover {
-    background-color: rgba(43, 43, 43);
-}
-
-#carousel__exit::before {
-    content: "";
-    width: 19px;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-}
-
-#carousel__exit::after {
-    content: "";
-    width: 19px;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) rotate(-45deg);
-}
-
-#carousel__exit:hover:before,
-#carousel__exit:hover:after {
-    background: white;
-}
-
 .carousel__viewport {
     height: calc(100vh - 30px);
     position: absolute;

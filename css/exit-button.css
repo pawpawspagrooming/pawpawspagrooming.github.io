@@ -1,0 +1,40 @@
+#exit {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(43, 43, 43, 0.7);
+    z-index: 2;
+    position: absolute;
+    right: -0.6rem;
+    top: -1rem;
+}
+
+#exit:hover {
+    background-color: rgba(43, 43, 43);
+}
+
+#exit::before {
+    content: "";
+    width: 19px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+#exit::after {
+    content: "";
+    width: 19px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+#exit:hover:before,
+#exit:hover:after {
+    background: white;
+}
