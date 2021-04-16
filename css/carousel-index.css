@@ -175,7 +175,7 @@ li {
 .carousel__navigation {
     position: absolute;
     right: 0;
-    bottom: -2.6rem;
+    bottom: 0rem;
     left: 0;
     text-align: center;
 }
@@ -189,7 +189,7 @@ li {
     display: inline-block;
     width: 0.8rem;
     height: 0.8rem;
-    background-color: rgba(143, 143, 143, 0.51);
+    background-color: rgb(228, 228, 228);
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
@@ -197,6 +197,8 @@ li {
     transition: transform 0.1s;
 }
 
+.carousel::before,
+.carousel::after,
 .carousel__prev,
 .carousel__next {
     position: absolute;
@@ -207,12 +209,51 @@ li {
     outline: 0;
 }
 
+/* left arrow button */
+.carousel::before {
+    content: "<";
+}
+
+/* right arrow button */
+.carousel::after {
+    content: ">";
+}
+
+.carousel::before,
+.carousel::after {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    pointer-events: none;
+    background-color: rgba(79, 79, 79, 0.7);
+    opacity: 0;
+}
+
+.carousel::before,
 .carousel__prev {
     left: 0rem;
 }
 
+.carousel::after,
 .carousel__next {
     right: 0rem;
+}
+
+.carousel:hover:before,
+.carousel:hover:after {
+    opacity: 1;
+    transition: ease 0.5s;
 }
 
 @media only screen and (min-width: 700px) {
