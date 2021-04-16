@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawpaw Spa & Grooming - Gallery</title>
+    <meta name="description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta name="keywords"
+        content="pawpaw, pawpaw spa & grooming, edmonton pawpaw, pet grooming, pet spa, pet supply, pet food, edmonton pet, edmonton grooming, edmonton pet supply, edmonton pet food">
+    <meta property="og:site_name" content="pawpaw">
+    <meta property="og:url" content="http://pawpawpetspa.com/pages/gallery">
+    <meta property="og:title" content="Gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gallery">
+    <meta name="twitter:description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta property="og:image"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:secure_url"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <link rel="stylesheet" href="../css/carousel-gallery.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <script src="../script/main.js" defer></script>
+    <script src="../script/carousel-gallery.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../picture/full logo.png">
+        </div>
+        <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
+        <div class="nav-desktop">
+            <a href="../index.html#book">book now</a>
+            <a href="../index.html#service">our services</a>
+            <a href="#">gallery</a>
+            <a href="../index.html#contact">contact us</a>
+        </div>
+        <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
+            <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
+            <button class="nav-mobile-button">
+                <div id="nav-mobile-button-div1"></div>
+                <div id="nav-mobile-button-div2"></div>
+                <div id="nav-mobile-button-div3"></div>
+                <div id="nav-mobile-button-div4"></div>
+            </button>
+            <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
+                <li><a href="../index.html#book">book now</a></li>
+                <li><a href="../index.html#service">our services</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="../index.html#contact">contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>gallery</h1>
+        <section class="images">
+            <a href="#carousel__slide1" class="image"></a>
+            <a href="#carousel__slide2" class="image"></a>
+            <a href="#carousel__slide3" class="image"></a>
+            <a href="#carousel__slide4" class="image"></a>
+            <a href="#carousel__slide5" class="image"></a>
+            <a href="#carousel__slide6" class="image"></a>
+            <span>More photos comming soon</span>
+        </section>
+
+        <!-- The pop-up image window -->
+        <section class="carousel" id="carousel" aria-label="Gallery">
+            <!-- The button to close the image window. -->
+            <button id="carousel__exit"></button>
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="1" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide6" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                        <img class="slide__image" src="../picture/gallery-dog1.jpeg"
+                            alt="several people waiting in line to make purchases in Cafe O Play">
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="2" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                        <img class="slide__image" src="../picture/gallery-dog2.jpeg" alt="store staff making latte">
+                    </div>
+                </li>
+                <li id="carousel__slide3" tabindex="3" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4" class="carousel__next">Go to first slide</a>
+                        <img class="slide__image" src="../picture/gallery-dog3.jpeg"
+                            alt="3 toy cars lined up near a big green mat">
+                    </div>
+                </li>
+                <li id="carousel__slide4" tabindex="4" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide5" class="carousel__next">Go to first slide</a>
+                        <img class="slide__image" src="../picture/gallery-dog4.jpeg"
+                            alt="the kitchen of Cafe O Play, where everything was neatly put in place">
+                    </div>
+                </li>
+                <li id="carousel__slide5" tabindex="5" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide6" class="carousel__next">Go to first slide</a>
+                        <img class="slide__image" src="../picture/gallery-dog5.jpeg"
+                            alt="the chidren play area with slide, trampoline, toy train table, and so on">
+                    </div>
+                </li>
+                <li id="carousel__slide6" tabindex="6" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                        <img class="slide__image" src="../picture/gallery-dog6.jpeg"
+                            alt="a table with toys for toddlers">
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+
+</html>
