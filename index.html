@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paw Paw Spa & Grooming</title>
+    <title>Pawpaw Spa & Grooming - Home</title>
     <meta name="description"
-        content="Pawpaw has professional grade pet grooming and massage services. We also carry a variety of pet supplies including pet food, treat etc.">
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
     <meta name="keywords"
         content="pawpaw, pawpaw spa & grooming, edmonton pawpaw, pet grooming, pet spa, pet supply, pet food, edmonton pet, edmonton grooming, edmonton pet supply, edmonton pet food">
     <meta property="og:site_name" content="pawpaw">
@@ -14,21 +15,24 @@
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
     <meta property="og:description"
-        content="Pawpaw has professional grade pet grooming and massage services. We also carry a variety of pet supplies including pet food, treat etc.">
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Home">
     <meta name="twitter:description"
-        content="Pawpaw has professional grade pet grooming and massage services. We also carry a variety of pet supplies including pet food, treat etc.">
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
     <meta property="og:image"
         content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
     <meta property="og:image:secure_url"
         content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628">
+    <link rel="icon" href="./picture/full logo.ico">
+    <link rel="stylesheet" href="./css/exit-button.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="./css/carousel-index.css">
     <script src="./script/main.js" defer></script>
+    <script src="./script/popup-window.js" defer></script>
 </head>
 
 <body>
@@ -41,7 +45,7 @@
         <div class="nav-desktop">
             <a href="#book">book now</a>
             <a href="#service">our services</a>
-            <a href="#gallery">gallery</a>
+            <a href="./pages/gallery.html">gallery</a>
             <a href="#contact">contact us</a>
         </div>
         <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
@@ -55,13 +59,19 @@
             <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
                 <li><a href="#book">book now</a></li>
                 <li><a href="#service">our services</a></li>
-                <li><a href="#gallery">gallery</a></li>
+                <li><a href="./pages/gallery.html">gallery</a></li>
                 <li><a href="#contact">contact us</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
+        <section class="promotion">
+            <button id="exit"></button>
+            <img id="promotion__card" src="./picture/promotion.jpeg"
+                alt="a promotion poster saying that pet grooming is 20% off for limited time.">
+        </section>
+
         <section class="carousel" aria-label="Gallery">
             <ol class="carousel__viewport">
                 <li id="carousel__slide1" tabindex="1" class="carousel__slide">
@@ -103,54 +113,46 @@
             <h1 class="anchorOffset">our services</h1>
             <table class="service-items">
                 <tr>
-                    <th>bath</th>
-                    <th>price</th>
-                    <th>full grooming</th>
-                    <th>price (from)</th>
-                </tr>
-                <tr>
-                    <td>x small</td>
-                    <td>$40</td>
-                    <td>x small</td>
-                    <td>$60</td>
+                    <th>pet size</th>
+                    <th>bath & tidy (starting from)</th>
+                    <th>full grooming (starting from)</th>
                 </tr>
                 <tr>
                     <td>small</td>
                     <td>$50</td>
-                    <td>small</td>
                     <td>$70</td>
                 </tr>
                 <tr>
                     <td>medium</td>
                     <td>$60</td>
-                    <td>medium</td>
-                    <td>$90</td>
+                    <td>$80</td>
                 </tr>
                 <tr>
                     <td>large</td>
                     <td>$80</td>
-                    <td>large</td>
                     <td>$115</td>
                 </tr>
                 <tr>
                     <td>x large</td>
-                    <td>$115</td>
-                    <td>x large</td>
+                    <td>$100</td>
                     <td>$135</td>
                 </tr>
                 <tr>
                     <td>xx large</td>
-                    <td>$125</td>
-                    <td>xx large</td>
+                    <td>$120</td>
                     <td>$150</td>
                 </tr>
                 <tr>
-                    <td colspan="4" id="service-items-bottomOfFirstTable"><br>*Full grooming includes bath, grooming,
-                        ear
-                        cleaning, nail trimming, annal glance, and cleaning inside paws.<br><br>*Service prices may
+                    <td colspan="4" id="service-items-bottomOfFirstTable"><br>*Bath & Tidy include: ear cleaning, nail
+                        clipping & grinding, shave inside paw, anal gland expression & tidy paw, bum, tail and face.
+                        <br><br>
+                        *Full grooming is Bath & Tidy + full body styling & trimming.
+                        <br><br>
+                        *Service prices may
                         change
                         depending on coat
-                        conditions such as matting.</td>
+                        conditions such as matting.
+                    </td>
                 </tr>
             </table>
             <table id="services__other-services">
@@ -162,35 +164,56 @@
                     <td>$8</td>
                 </tr>
                 <tr>
-                    <td><img src="./picture/paw.png"><span>pawdicure</span></td>
-                    <td>$10</td>
+                    <td><img src="./picture/paw.png"><span>paw cream & massage</span></td>
+                    <td>$5</td>
                 </tr>
                 <tr>
                     <td><img src="./picture/paw.png"><span>ear cleaning</span></td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>nail clipping & grinding</span></td>
                     <td>$15</td>
                 </tr>
                 <tr>
-                    <td><img src="./picture/paw.png"><span>nail trim</span></td>
-                    <td class="other-services__not-capital">$10 or $22 for nail clipping, grinding, and complementary
-                        paw
-                        shave</td>
+                    <td><img src="./picture/paw.png"><span>nail paint</span></td>
+                    <td>$15</td>
                 </tr>
                 <tr>
-                    <td><img src="./picture/paw.png"><span>hair treatment</span></td>
-                    <td>$20</td>
+                    <td><img src="./picture/paw.png"><span>hair dye</span></td>
+                    <td>$10-$25</td>
                 </tr>
                 <tr>
-                    <td><img src="./picture/paw.png"><span>ozone/milk/essential oil spa</span></td>
-                    <td class="other-services__not-capital">Starting from $25</td>
+                    <td><img src="./picture/paw.png"><span>skin & hair care</span></td>
+                    <td>$5-$15</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span class="other-services__not-capital">Ozone Spa & Massage (milky/essential oil, bath salt, or skin
+                            treatment Spa)</span></td>
+                    <td class="other-services__not-capital">$20-$40</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span class="other-services__not-capital">Full Spa Service (Ozone spa+ skin/hair care with steamer+deep
+                            massage)</span></td>
+                    <td class="other-services__not-capital">$25-$55</td>
                 </tr>
             </table>
-            <span id="other-services__note">*Store will also be selling dog treats, food, toys, and other
-                products.</span>
-        </section>
+            <span id="other-services__shampoo">Shampoo Choice</span>
+            <ul id="other-services__shampoo-list">
+                <li>
+                    Rose (deep clean, moisture & perfume)
+                </li>
+                <li>
+                    Macadamia Nuts (help hair growth, less shed & perfume)
+                </li>
+                <li>
+                    Lavender (calm, moisture & relieve itch)
+                </li>
+                <li>
+                    Bergamot (oil control, whitening, kill bacteria & relieve itch)
+                </li>
 
-        <section class="gallery" id="gallery">
-            <h1 class="anchorOffset">gallery</h1>
-            <span>Coming soon...</span>
+            </ul>
         </section>
 
         <section class="book" id="book">
