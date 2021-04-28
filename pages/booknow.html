@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawpaw Spa & Grooming - Book</title>
+    <meta name="description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta name="keywords"
+        content="pawpaw, pawpaw spa & grooming, edmonton pawpaw, pet grooming, pet spa, pet supply, pet food, edmonton pet, edmonton grooming, edmonton pet supply, edmonton pet food">
+    <meta property="og:site_name" content="pawpaw">
+    <meta property="og:url" content="http://pawpawpetspa.com/pages/booknow">
+    <meta property="og:title" content="Booking">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Booking">
+    <meta name="twitter:description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta property="og:image"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:secure_url"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <link rel="icon" href="../picture/full logo.ico">
+    <link rel="stylesheet" href="../css/carousel-gallery.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/booknow.css">
+    <script src="../script/main.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../picture/full logo.png">
+        </div>
+        <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
+        <div class="nav-desktop">
+            <a href="../index.html">home</a>
+            <a href="#">book now</a>
+            <a href="../index.html#service">our services</a>
+            <a href="./gallery.html">gallery</a>
+            <a href="./contact.html">contact us</a>
+        </div>
+        <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
+            <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
+            <button class="nav-mobile-button">
+                <div id="nav-mobile-button-div1"></div>
+                <div id="nav-mobile-button-div2"></div>
+                <div id="nav-mobile-button-div3"></div>
+                <div id="nav-mobile-button-div4"></div>
+            </button>
+            <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="#">book now</a></li>
+                <li><a href="../index.html#service">our services</a></li>
+                <li><a href="./gallery.html">gallery</a></li>
+                <li><a href="./contact.html">contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>online booking</h1>
+        <section class="customer-info">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="1adf314d-1e02-43b2-80ff-3b1fa25aa81b">
+                <input type="hidden" name="subject" value="New Appointment!">
+                <div class="label-and-input">
+                    <label for="firstname">First Name*</label>
+                    <input type="text" name="$firstname" required>
+                </div>
+                <div class="label-and-input">
+                    <label for="lastname">Last Name*</label>
+                    <input type="text" name="$lastname" required>
+                </div>
+                <div class="label-and-input">
+                    <label for="phone">Phone Number*</label>
+                    <input type="text" name="phone" required>
+                </div>
+                <div class="label-and-input">
+                    <label for="pet-breed">Pet Breed*</label>
+                    <input type="text" name="$pet-breed" required>
+                </div>
+                <div class="label-and-input">
+                    <label for="pet-weight">Pet Weight (lb)*</label>
+                    <input type="number" name="$pet-weight" required>
+                </div>
+                <span id="form__note">*Please choose 2 preferred appointment times. Please note, <u>we are closed on
+                        Sundays</u>.</span>
+                <div class="label-and-input">
+                    <label for="appointment-time-1">Preferred date & time (1st choice)*</label>
+                    <div>
+                        <input type="date" name="$appointment-time-1" required>
+                        <input type="time" name="$appointment-time-1" min="08:00:00" max="17:30:00" required>
+                    </div>
+                </div>
+                <div class="label-and-input">
+                    <label for="appointment-time-2">Preferred date & time (2nd choice)*</label>
+                    <div>
+                        <input type="date" name="$appointment-time-2" required>
+                        <input type="time" name="$appointment-time-2" min="08:00:00" max="17:30:00" required>
+                    </div>
+                </div>
+                <div class="label-and-input" id="message">
+                    <label for="message">Comments (optional)</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <input type="hidden" name="redirectTo" value="http://pawpawpetspa.com/pages/thanks.html">
+                <input type="submit" value="Submit" id="submit" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../picture/dog-sleep.png" id="footer__dog">
+        <div id="footer-links">
+            <a href="../index.html#service">our services</a>
+            <a href="./gallery.html">gallery</a>
+            <a href="https://www.freeprivacypolicy.com/live/36eae59f-bba0-4c42-b637-d2606a8f3684" target="_blank"
+                rel="noopener noreferrer">privacy policy</a>
+            <a href="../files-for-download/New Client Profile & Agreement.pdf" download="">download service
+                agreement</a>
+        </div>
+        <div id="copyright">
+            <span>Copyright ⓒ 2021, </span><a href="../index.html">pawpaw spa & grooming</a><span>. Site designed and
+                developed by Ivan Wang.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
