@@ -5,11 +5,290 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawpaw Spa Grooming</title>
+    <title>Pawpaw Spa & Grooming - Home</title>
+    <meta name="description"
+        content="a professional and experienced team located in Edmonton, is fully licensed and ready to provide you with our quality services.">
+    <meta name="keywords" content="edmonton fence, edmonton deck, deck, fence, ">
+    <meta property="og:site_name" content="pawpaw">
+    <meta property="og:url" content="http://pawpawpetspa.com/">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home">
+    <meta name="twitter:description"
+        content="Pawpaw has professional grade pet grooming and spa services. We also carry a variety of pet supplies including pet food, treat etc.">
+    <meta property="og:image"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:secure_url"
+        content="https://pawpawpetspa.com/picture/full logo.png?height=628&amp;pad_color=fafafa&amp;v=1542909150&amp;width=1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <link rel="icon" href="./picture/full logo.ico">
+    <link rel="stylesheet" href="./css/exit-button.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/carousel-index.css">
+    <script src="./script/main.js" defer></script>
+    <script src="./script/popup-window.js" defer></script>
 </head>
 
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; width: 100vw;">
-    <h1 style="font-size:xx-large;">Opening Soon!</h1>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./picture/full logo.png">
+        </div>
+
+        <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
+        <div class="nav-desktop">
+            <a href="#">home</a>
+            <a href="./pages/booknow.html">book now</a>
+            <a href="#service">our services</a>
+            <a href="./pages/gallery.html">gallery</a>
+            <a href="./pages/contact.html">contact us</a>
+        </div>
+        <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
+            <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
+            <button class="nav-mobile-button">
+                <div id="nav-mobile-button-div1"></div>
+                <div id="nav-mobile-button-div2"></div>
+                <div id="nav-mobile-button-div3"></div>
+                <div id="nav-mobile-button-div4"></div>
+            </button>
+            <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
+                <li><a href="#">home</a></li>
+                <li><a href="./pages/booknow.html">book now</a></li>
+                <li><a href="#service">our services</a></li>
+                <li><a href="./pages/gallery.html">gallery</a></li>
+                <li><a href="./pages/contact.html">contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- <section class="promotion">
+            <button id="exit"></button>
+            <img id="promotion__card" src="./picture/opening.jpg"
+                alt="a poster saying store is opening soon.">
+        </section> -->
+
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="1" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+                        <span class="carousel__slogan">Come for a spa</span>
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="2" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <span class="carousel__slogan">Enjoy a luxurious bath</span>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3" tabindex="3" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <span class="carousel__slogan">Get groomed and look fabulous!</span>
+                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1" class="carousel__navigation-button"></a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3" class="carousel__navigation-button"></a>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+
+        <section class="about-us">
+            <h2>about us</h2>
+            <p>
+                PawPaw Spa & Grooming is a premier pet aesthetic services provider located in Edmonton, AB.
+                We hire the most professional and caring groomers while offering high quality products and
+                exceptional customer service. We are also equipped with the latest and most advanced equipment so
+                that your furry friend will be set up for a luxurious spa day. We understand that the health and
+                safety of your pet must be your top concern. Therefore, all the products we use and sell are 100%
+                natural.
+                <br>
+                <br>
+                Here at PawPaw Spa & Grooming, we employ some of
+                the most experienced, talented, and hard-working grooming specialists in town. We provide our
+                groomers with continuous training and career development opportunities to catch up with the latest
+                style and technology. Please visit our <a href="./pages/gallery.html">gallery page</a> to view some of our groomers' work.
+                <br>
+                <br>
+                Customer satisfaction is always our #1 priority. Our professional and
+                experienced groomers are not only there to answer your questions, they will also provide you with a
+                detailed report after each grooming appointment.
+                At PawPaw Spa & Grooming, you can rest assured that your furry friend will always receive the best
+                care and style.
+            </p>
+        </section>
+
+        <section class="service" id="service">
+            <h2>our services</h2>
+
+            <!-- Table of services for dogs -->
+            <div id="service__header-and-icon">
+                <img class="service__dog-icon" src="./picture/dog-head.png">
+                <h3>Dog Services</h3>
+            </div>
+            <table class="service-items">
+                <tr>
+                    <th>dog size</th>
+                    <th>bath & tidy (basic price)</th>
+                    <th>full grooming (basic price)</th>
+                </tr>
+                <tr>
+                    <td>small</td>
+                    <td>$50</td>
+                    <td>$70</td>
+                </tr>
+                <tr>
+                    <td>medium</td>
+                    <td>$60</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>large</td>
+                    <td>$80</td>
+                    <td>$115</td>
+                </tr>
+                <tr>
+                    <td>x large</td>
+                    <td>$100</td>
+                    <td>$135</td>
+                </tr>
+                <tr>
+                    <td>xx large</td>
+                    <td>$120</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td colspan="3" id="service-items-bottomOfFirstTable"><br>*Bath & Tidy includes ear cleaning, nail
+                        clipping & grinding, shave inside paw, anal gland expression & tidy paw, bum, tail and face.
+                        <br><br>
+                        *Full grooming includes Bath & Tidy + full body styling & trimming.
+                        <br><br>
+                        *Price may change depending on temperaments, coat conditions and sizes.
+                    </td>
+                </tr>
+            </table>
+            <table class="services__other-services">
+                <tr>
+                    <th id="other-services__title" colspan="2">Additional Dog Services</th>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>teeth brushing</span></td>
+                    <td>$8</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>paw cream & massage</span></td>
+                    <td>$5</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>ear cleaning</span></td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>nail clipping & grinding</span></td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>nail paint</span></td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>hair dye</span></td>
+                    <td>$10 - $25</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span>skin & hair care</span></td>
+                    <td>$5 - $15</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span class="other-services__not-capital">Ozone Spa & Massage
+                            (milky/essential oil, bath salt, or skin
+                            treatment Spa)</span></td>
+                    <td class="other-services__not-capital">$20 - $40</td>
+                </tr>
+                <tr>
+                    <td><img src="./picture/paw.png"><span class="other-services__not-capital">Full Spa Service (Ozone
+                            spa+ skin/hair care with steamer+deep
+                            massage)</span></td>
+                    <td class="other-services__not-capital">$25 - $55</td>
+                </tr>
+            </table>
+
+            <!-- Table of services for cats -->
+            <div id="service__header-and-icon">
+                <img src="./picture/cat-head.png">
+                <h3>Cat Services</h3>
+            </div>
+            <table class="service-items">
+                <tr>
+                    <th class="cat-services__services">
+                        type of service
+                    </th>
+                    <th class="cat-services__services">
+                        basic price
+                    </th>
+                </tr>
+                <tr>
+                    <td class="cat-services__prices">
+                        Bath Only
+                    </td>
+                    <td class="cat-services__prices">
+                        $70
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cat-services__prices">
+                        Bath & Shave Down
+                    </td>
+                    <td class="cat-services__prices">
+                        $80
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="cat-services__notes">
+                        <br>
+                        *Bath includes bath, shampoo, dry, and nail clipping.
+                        <br><br>
+                        *Bath & shave down includes bath, shampoo, dry, nails clipping, and shave down.
+                        <br><br>
+                        *Prices can go up depending on behavior, coat condition and size.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./picture/dog-sleep.png" id="footer__dog">
+        <div id="footer-links">
+            <a href="#service">our services</a>
+            <a href="./pages/gallery.html">gallery</a>
+            <a href="https://www.freeprivacypolicy.com/live/36eae59f-bba0-4c42-b637-d2606a8f3684" target="_blank"
+                rel="noopener noreferrer">privacy policy</a>
+            <a href="./files-for-download/New Client Profile & Agreement.pdf" download="">download service agreement</a>
+        </div>
+        <div id="copyright">
+            <span>Copyright ⓒ 2021, </span><a href="./index.html">pawpaw spa & grooming</a><span>. Site designed and
+                developed by Ivan Wang.</span>
+        </div>
+    </footer>
 </body>
 
 </html>
