@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Satisfy&display=swap");
+
+/* Global Properties: start */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 125px;
+}
+
+body {
+    margin: 0;
+}
+
+span,
+p,
+th,
+td,
+a,
+address,
+label,
+input {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Satisfy", cursive;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 5rem auto 2rem;
+    padding: 2.5rem 3rem 0;
+    width: 14rem;
+    height: 4rem;
+}
+/* Global Properties: end */
+
+/* Section Book: start */
+.business-hours table {
+    width: 18rem;
+    position: relative;
+    margin: 0 auto 2rem;
+    font-size: 1.3rem;
+    /* padding: 12rem 4rem 6rem;
+    border-image: url("../picture/dog-border3.png") fill 200 1 stretch; */
+}
+
+.business-hours table {
+    margin-top: 1.5rem;
+}
+
+.business-hours table th {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.business-hours table td {
+    text-transform: capitalize;
+    text-align: center;
+}
+/* Section Book: end */
+
+/* Section Contact: start */
+.contact,
+.contact-cards,
+.contact-cards-info,
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.contact,
+.contact-cards-info,
+.cards {
+    flex-direction: column;
+    color: black;
+}
+
+.cards {
+    width: 20rem;
+    height: 10rem;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.cards span,
+.cards address {
+    font-style: normal;
+    margin-top: 1.5rem;
+}
+/* Section Contact: end */
+
+@media only screen and (min-width: 550px) {
+    .book table {
+        padding: 12rem 8rem 6rem;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+}

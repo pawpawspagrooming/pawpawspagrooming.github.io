@@ -1,0 +1,56 @@
+/* embed google font */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Satisfy&display=swap");
+
+
+footer {
+    padding: 2rem 0 1rem;
+    height: max-content;
+    background-color: #81d8d0;
+    margin-top: 120px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+#footer-logo {
+    height: 4rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    position: relative;
+    margin: 0rem auto;
+    text-align: center;
+}
+
+#footer__dog {
+    position: absolute;
+    top: -155px;
+    left: calc(50% - 125px);
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+#copyright {
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 550px) {
+    #footer-links {
+        flex-direction: row;
+    }
+}
