@@ -99,6 +99,7 @@ section:not(:last-of-type) {
 .about-us p {
     padding: 1.5rem 0;
     text-align: center;
+    width: 80%;
 }
 /* Section about-us: end */
 
