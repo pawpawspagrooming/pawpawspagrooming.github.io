@@ -29,7 +29,7 @@ h1 {
     letter-spacing: 2px;
     font-size: 2rem;
     margin: 5rem auto 2rem;
-    padding: 2.5rem 3rem 0;
+    padding: 2.5rem 0 0;
     width: 14rem;
     height: 4rem;
 }
@@ -64,8 +64,8 @@ h1 {
     margin-bottom: 0.7rem;
 }
 
- label,
- .label-and-input span {
+label,
+.label-and-input span {
     font-size: 0.8rem;
 }
 
