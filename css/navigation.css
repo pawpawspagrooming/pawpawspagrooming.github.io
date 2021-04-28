@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Comic+Neue");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Satisfy&display=swap");
 
 nav {
     position: fixed;
@@ -10,8 +10,8 @@ nav {
     background: white;
     z-index: 99;
     letter-spacing: 2px;
-    font-family: 'Comic Neue';
     font-weight: bolder;
+    font-family: "Open Sans", sans-serif;
 }
 
 nav a:hover {
