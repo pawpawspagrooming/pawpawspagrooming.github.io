@@ -23,7 +23,8 @@ address {
     font-family: "Open Sans", sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Satisfy", cursive;
     text-transform: capitalize;
     text-align: center;
@@ -86,7 +87,9 @@ section:not(:last-of-type) {
 }
 
 .about-us p {
-    background: #81d8d0;
+    border: 10px solid;
+    border-image: url("../picture/paw.png") 100% 1 repeat;
+    border-image-width: 2;
     padding: 1.5rem 2rem;
     text-align: center;
 }
@@ -337,6 +340,10 @@ section:not(:last-of-type) {
 
     .service {
         width: 85vw;
+    }
+
+    .about-us p {
+        margin: 0 5rem;
     }
 
     .services__other-services,
