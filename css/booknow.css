@@ -18,7 +18,9 @@ td,
 a,
 address,
 label,
-input {
+input,
+fieldset,
+legend {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -71,6 +73,13 @@ label,
 
 .label-and-input input {
     line-height: 2rem;
+    padding: 0 0.6rem;
+}
+
+.label-and-input select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
 }
 
 #form__note {
@@ -86,6 +95,8 @@ label,
 textarea {
     height: 100px;
     max-width: 400px;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
 }
 
 input {
@@ -94,9 +105,22 @@ input {
     outline: none;
 }
 
-textarea {
+fieldset {
+    margin-bottom: 0.7rem;
     border-radius: 5px;
-    border: 2px solid rgba(128, 128, 128, 0.5);
+    font-size: 0.8rem;
+    border-color: rgba(128, 128, 128, 0.5);
+    padding: 0 2rem;
+}
+
+legend {
+    font-size: 0.8rem;
+}
+
+.label-and-input-horizontal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #submit {
