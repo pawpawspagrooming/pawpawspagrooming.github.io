@@ -89,7 +89,7 @@ section:not(:last-of-type) {
 .about-us div {
     border: 1px solid;
     border-image: url("../picture/paw.png") 100% 0 repeat;
-    border-image-width: 20px;
+    border-image-width: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
