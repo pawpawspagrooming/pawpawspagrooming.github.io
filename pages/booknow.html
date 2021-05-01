@@ -102,6 +102,7 @@
                     <select name="$pettype">
                         <option value="Dog" selected>Dog</option>
                         <option value="Cat">Cat</option>
+                        <option value="Both">Both</option>
                     </select>
                 </div>
                 <div class="label-and-input">
@@ -131,6 +132,48 @@
                     </select>
                 </div> -->
 
+
+
+                <span id="form__note">*Please choose 2 preferred appointment times. Please note, <u>we are closed on
+                        Sundays</u>.</span>
+                <div class="label-and-input">
+                    <label for="$appointment-time-1">Preferred date & time (1st choice)*</label>
+                    <div>
+                        <input type="date" name="$appointment-time-1" required>
+                        <!-- <input type="time" name="$appointment-time-1" min="08:00:00" max="17:30:00" required> -->
+                        <select name="$appointment-time-1">
+                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
+                            <option value="9:00 - 10:00">9:00 - 10:00</option>
+                            <option value="10:00 - 11:00">10:00 - 11:00</option>
+                            <option value="11:00 - 12:00">11:00 - 12:00</option>
+                            <option value="12:00 - 13:00">12:00 - 13:00</option>
+                            <option value="13:00 - 14:00">13:00 - 14:00</option>
+                            <option value="14:00 - 15:00">14:00 - 15:00</option>
+                            <option value="15:00 - 16:00">15:00 - 16:00</option>
+                            <option value="16:00 - 17:00">16:00 - 17:00</option>
+                            <option value="After 17:00">After 17:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="label-and-input">
+                    <label for="$appointment-time-2">Preferred date & time (2nd choice)*</label>
+                    <div>
+                        <input type="date" name="$appointment-time-2" required>
+                        <!-- <input type="time" name="$appointment-time-2" min="08:00:00" max="17:30:00" required> -->
+                        <select name="$appointment-time-2">
+                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
+                            <option value="9:00 - 10:00">9:00 - 10:00</option>
+                            <option value="10:00 - 11:00">10:00 - 11:00</option>
+                            <option value="11:00 - 12:00">11:00 - 12:00</option>
+                            <option value="12:00 - 13:00">12:00 - 13:00</option>
+                            <option value="13:00 - 14:00">13:00 - 14:00</option>
+                            <option value="14:00 - 15:00">14:00 - 15:00</option>
+                            <option value="15:00 - 16:00">15:00 - 16:00</option>
+                            <option value="16:00 - 17:00">16:00 - 17:00</option>
+                            <option value="After 17:00">After 17:00</option>
+                        </select>
+                    </div>
+                </div>
                 <fieldset>
                     <legend>What service(s) are you interested in?*</legend>
                     <div class="label-and-input-horizontal">
@@ -185,47 +228,6 @@
                         <input type="checkbox" name="$services" value="Cat - Bath & Shave Down">
                         <label for="$services">Cat - Bath & Shave Down</label>
                 </fieldset>
-
-                <span id="form__note">*Please choose 2 preferred appointment times. Please note, <u>we are closed on
-                        Sundays</u>.</span>
-                <div class="label-and-input">
-                    <label for="$appointment-time-1">Preferred date & time (1st choice)*</label>
-                    <div>
-                        <input type="date" name="$appointment-time-1" required>
-                        <!-- <input type="time" name="$appointment-time-1" min="08:00:00" max="17:30:00" required> -->
-                        <select name="$appointment-time-1">
-                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
-                            <option value="9:00 - 10:00">9:00 - 10:00</option>
-                            <option value="10:00 - 11:00">10:00 - 11:00</option>
-                            <option value="11:00 - 12:00">11:00 - 12:00</option>
-                            <option value="12:00 - 13:00">12:00 - 13:00</option>
-                            <option value="13:00 - 14:00">13:00 - 14:00</option>
-                            <option value="14:00 - 15:00">14:00 - 15:00</option>
-                            <option value="15:00 - 16:00">15:00 - 16:00</option>
-                            <option value="16:00 - 17:00">16:00 - 17:00</option>
-                            <option value="After 17:00">After 17:00</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="label-and-input">
-                    <label for="$appointment-time-2">Preferred date & time (2nd choice)*</label>
-                    <div>
-                        <input type="date" name="$appointment-time-2" required>
-                        <!-- <input type="time" name="$appointment-time-2" min="08:00:00" max="17:30:00" required> -->
-                        <select name="$appointment-time-2">
-                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
-                            <option value="9:00 - 10:00">9:00 - 10:00</option>
-                            <option value="10:00 - 11:00">10:00 - 11:00</option>
-                            <option value="11:00 - 12:00">11:00 - 12:00</option>
-                            <option value="12:00 - 13:00">12:00 - 13:00</option>
-                            <option value="13:00 - 14:00">13:00 - 14:00</option>
-                            <option value="14:00 - 15:00">14:00 - 15:00</option>
-                            <option value="15:00 - 16:00">15:00 - 16:00</option>
-                            <option value="16:00 - 17:00">16:00 - 17:00</option>
-                            <option value="After 17:00">After 17:00</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="label-and-input" id="message">
                     <label for="$message">Comments (optional)</label>
                     <textarea name="$message"></textarea>
