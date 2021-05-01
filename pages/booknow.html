@@ -28,10 +28,14 @@
     <meta property="og:image:height" content="628">
     <link rel="icon" href="../picture/full logo.ico">
     <link rel="stylesheet" href="../css/carousel-gallery.css">
-    <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/booknow.css">
+    <link rel="stylesheet" href="../css/navigation.css">
     <script src="../script/main.js" defer></script>
+    <script src="../script/vanillaSelectBox.js" defer></script>
+    <script type="text/javascript" defer>
+        let selectBox = new vanillaSelectBox("#select-services", { "maxHeight": 200, search: true });
+    </script>
 </head>
 
 <body>
@@ -69,47 +73,162 @@
         <h1>online booking</h1>
         <section class="customer-info">
             <form action="https://api.staticforms.xyz/submit" method="post">
+                <!-- This is for testing only, i..0..w.. -->
+                <!-- <input type="hidden" name="accessKey" value="cdb72186-be4a-4964-8cef-69c5f74f5ef5"> -->
                 <input type="hidden" name="accessKey" value="1adf314d-1e02-43b2-80ff-3b1fa25aa81b">
                 <input type="hidden" name="subject" value="New Appointment!">
                 <div class="label-and-input">
-                    <label for="firstname">First Name*</label>
+                    <label for="$firstname">First Name*</label>
                     <input type="text" name="$firstname" required>
                 </div>
                 <div class="label-and-input">
-                    <label for="lastname">Last Name*</label>
+                    <label for="$lastname">Last Name*</label>
                     <input type="text" name="$lastname" required>
                 </div>
                 <div class="label-and-input">
-                    <label for="phone">Phone Number*</label>
-                    <input type="text" name="phone" required>
+                    <label for="$phone">Phone Number*</label>
+                    <input type="text" name="$phone" required>
                 </div>
                 <div class="label-and-input">
-                    <label for="pet-breed">Pet Breed*</label>
+                    <label for="$email">Email*</label>
+                    <input type="email" name="$email" required>
+                </div>
+                <div class="label-and-input">
+                    <label for="$petname">Pet Name*</label>
+                    <input type="text" name="$petname" required>
+                </div>
+                <div class="label-and-input">
+                    <label for="$pettype">Type of Pet*</label>
+                    <select name="$pettype">
+                        <option value="Dog" selected>Dog</option>
+                        <option value="Cat">Cat</option>
+                    </select>
+                </div>
+                <div class="label-and-input">
+                    <label for="$pet-breed">Pet Breed*</label>
                     <input type="text" name="$pet-breed" required>
                 </div>
                 <div class="label-and-input">
-                    <label for="pet-weight">Pet Weight (lb)*</label>
+                    <label for="$pet-weight">Pet Weight (lb)*</label>
                     <input type="number" name="$pet-weight" required>
                 </div>
+                <!-- <div class="label-and-input">
+                    <label for="$services">What service(s) are you interested in?*</label>
+                    <select name="$services" id="select-services" class="select-services" multiple>
+                        <option value="Dog - Bath & Tidy">Dog - Bath & Tidy</option>
+                        <option value="Dog - Full Grooming">Dog - Full Grooming</option>
+                        <option value="Dog - Teeth Brushing">Dog - Teeth Brushing</option>
+                        <option value="Dog - Paw Cream & Massage">Dog - Paw Cream & Massage</option>
+                        <option value="Dog - Ear Cleaning">Dog - Ear Cleaning</option>
+                        <option value="Dog - Nail Clipping & Grinding">Dog - Nail Clipping & Grinding</option>
+                        <option value="Dog - Nail Paint">Dog - Nail Paint</option>
+                        <option value="Dog - Hair Dye">Dog - Hair Dye</option>
+                        <option value="Dog - Skin & Hair Care">Dog - Skin & Hair Care</option>
+                        <option value="Dog - Ozone Spa & Massage">Dog - Ozone Spa & Massage</option>
+                        <option value="Dog - Full Spa Service">Dog - Full Spa Service</option>
+                        <option value="Cat - Bath">Cat - Bath</option>
+                        <option value="Cat - Bath & Shave Down">Cat - Bath & Shave Down</option>
+                    </select>
+                </div> -->
+
+                <fieldset>
+                    <legend>What service(s) are you interested in?*</legend>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Bath & Tidy">
+                        <label for="$services">Dog - Bath & Tidy</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Full Grooming">
+                        <label for="$services">Dog - Full Grooming</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Teeth Brushing">
+                        <label for="$services">Dog - Teeth Brushing</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Paw Cream & Massage">
+                        <label for="$services">Dog - Paw Cream & Massage</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Ear Cleaning">
+                        <label for="$services">Dog - Ear Cleaning</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Nail Clipping & Grinding">
+                        <label for="$services">Dog - Nail Clipping & Grinding</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Nail Paint">
+                        <label for="$services">Dog - Nail Paint</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Hair Dye">
+                        <label for="$services">Dog - Hair Dye</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Skin & Hair Care">
+                        <label for="$services">Dog - Skin & Hair Care</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Ozone Spa & Massage">
+                        <label for="$services">Dog - Ozone Spa & Massage</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Dog - Full Spa Service">
+                        <label for="$services">Dog - Full Spa Service</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Cat - Bath">
+                        <label for="$services">Cat - Bath</label>
+                    </div>
+                    <div class="label-and-input-horizontal">
+                        <input type="checkbox" name="$services" value="Cat - Bath & Shave Down">
+                        <label for="$services">Cat - Bath & Shave Down</label>
+                </fieldset>
+
                 <span id="form__note">*Please choose 2 preferred appointment times. Please note, <u>we are closed on
                         Sundays</u>.</span>
                 <div class="label-and-input">
-                    <label for="appointment-time-1">Preferred date & time (1st choice)*</label>
+                    <label for="$appointment-time-1">Preferred date & time (1st choice)*</label>
                     <div>
                         <input type="date" name="$appointment-time-1" required>
-                        <input type="time" name="$appointment-time-1" min="08:00:00" max="17:30:00" required>
+                        <!-- <input type="time" name="$appointment-time-1" min="08:00:00" max="17:30:00" required> -->
+                        <select name="$appointment-time-1">
+                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
+                            <option value="9:00 - 10:00">9:00 - 10:00</option>
+                            <option value="10:00 - 11:00">10:00 - 11:00</option>
+                            <option value="11:00 - 12:00">11:00 - 12:00</option>
+                            <option value="12:00 - 13:00">12:00 - 13:00</option>
+                            <option value="13:00 - 14:00">13:00 - 14:00</option>
+                            <option value="14:00 - 15:00">14:00 - 15:00</option>
+                            <option value="15:00 - 16:00">15:00 - 16:00</option>
+                            <option value="16:00 - 17:00">16:00 - 17:00</option>
+                            <option value="After 17:00">After 17:00</option>
+                        </select>
                     </div>
                 </div>
                 <div class="label-and-input">
-                    <label for="appointment-time-2">Preferred date & time (2nd choice)*</label>
+                    <label for="$appointment-time-2">Preferred date & time (2nd choice)*</label>
                     <div>
                         <input type="date" name="$appointment-time-2" required>
-                        <input type="time" name="$appointment-time-2" min="08:00:00" max="17:30:00" required>
+                        <!-- <input type="time" name="$appointment-time-2" min="08:00:00" max="17:30:00" required> -->
+                        <select name="$appointment-time-2">
+                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
+                            <option value="9:00 - 10:00">9:00 - 10:00</option>
+                            <option value="10:00 - 11:00">10:00 - 11:00</option>
+                            <option value="11:00 - 12:00">11:00 - 12:00</option>
+                            <option value="12:00 - 13:00">12:00 - 13:00</option>
+                            <option value="13:00 - 14:00">13:00 - 14:00</option>
+                            <option value="14:00 - 15:00">14:00 - 15:00</option>
+                            <option value="15:00 - 16:00">15:00 - 16:00</option>
+                            <option value="16:00 - 17:00">16:00 - 17:00</option>
+                            <option value="After 17:00">After 17:00</option>
+                        </select>
                     </div>
                 </div>
                 <div class="label-and-input" id="message">
-                    <label for="message">Comments (optional)</label>
-                    <textarea name="message"></textarea>
+                    <label for="$message">Comments (optional)</label>
+                    <textarea name="$message"></textarea>
                 </div>
                 <input type="hidden" name="redirectTo" value="http://pawpawpetspa.com/pages/thanks.html">
                 <input type="submit" value="Submit" id="submit" />
@@ -128,6 +247,7 @@
                 agreement</a>
         </div>
         <div id="copyright">
+
             <span>Copyright ⓒ 2021, </span><a href="../index.html">pawpaw spa & grooming</a><span>. Site designed and
                 developed by Ivan Wang.</span>
         </div>
