@@ -32,10 +32,7 @@
     <link rel="stylesheet" href="../css/booknow.css">
     <link rel="stylesheet" href="../css/navigation.css">
     <script src="../script/main.js" defer></script>
-    <script src="../script/vanillaSelectBox.js" defer></script>
-    <script type="text/javascript" defer>
-        let selectBox = new vanillaSelectBox("#select-services", { "maxHeight": 200, search: true });
-    </script>
+    <script src="../script/booking-add-pet.js" defer></script>
 </head>
 
 <body>
@@ -75,6 +72,8 @@
             <form action="https://api.staticforms.xyz/submit" method="post">
                 <!-- This is for testing only, i..0..w.. -->
                 <!-- <input type="hidden" name="accessKey" value="cdb72186-be4a-4964-8cef-69c5f74f5ef5"> -->
+
+                <!-- This is for Jing Hu's gmail -->
                 <input type="hidden" name="accessKey" value="1adf314d-1e02-43b2-80ff-3b1fa25aa81b">
                 <input type="hidden" name="subject" value="New Appointment!">
                 <div class="label-and-input">
@@ -93,26 +92,101 @@
                     <label for="$email">Email*</label>
                     <input type="email" name="$email" required>
                 </div>
-                <div class="label-and-input">
-                    <label for="$petname">Pet Name*</label>
-                    <input type="text" name="$petname" required>
+                <div id="pet1" class="pet_info">
+                    <div class="label-and-input">
+                        <label for="$pet#1-name">Pet Name*</label>
+                        <input type="text" name="$pet#1-name" required>
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#1-type">Type of Pet*</label>
+                        <select name="$pet#1-type">
+                            <option value="Dog" selected>Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#1-breed">Pet Breed (optional)</label>
+                        <input type="text" name="$pet#1-breed">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#1-weight">Pet Weight (lb)*</label>
+                        <input type="number" name="$pet#1-weight" required>
+                    </div>
                 </div>
-                <div class="label-and-input">
-                    <label for="$pettype">Type of Pet*</label>
-                    <select name="$pettype">
-                        <option value="Dog" selected>Dog</option>
-                        <option value="Cat">Cat</option>
-                        <option value="Both">Both</option>
-                    </select>
+                <button id="add-pet-button-1">+ Add another pet</button>
+                <div id="pet2" class="pet_info">
+                    <span>Pet #2</span>
+                    <div class="label-and-input">
+                        <label for="$pet#2-name">Pet Name*</label>
+                        <input type="text" name="$pet#2-name">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#2-type">Type of Pet*</label>
+                        <select name="$pet#2-type">
+                            <option value="Dog" selected>Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#2-breed">Pet Breed (optional)</label>
+                        <input type="text" name="$pet#2-breed">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#2-weight">Pet Weight (lb)*</label>
+                        <input type="number" name="$pet#2-weight">
+                    </div>
                 </div>
-                <div class="label-and-input">
-                    <label for="$pet-breed">Pet Breed (optional)</label>
-                    <input type="text" name="$pet-breed">
+                <button id="add-pet-button-2">+ Add another pet</button>
+                <div id="pet3" class="pet_info">
+                    <span>Pet #3</span>
+                    <div class="label-and-input">
+                        <label for="$pet#3-name">Pet Name*</label>
+                        <input type="text" name="$pet#3-name">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#3-type">Type of Pet*</label>
+                        <select name="$pet#3-type">
+                            <option value="Dog" selected>Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#3-breed">Pet Breed (optional)</label>
+                        <input type="text" name="$pet#3-breed">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#3-weight">Pet Weight (lb)*</label>
+                        <input type="number" name="$pet#3-weight">
+                    </div>
                 </div>
-                <div class="label-and-input">
-                    <label for="$pet-weight">Pet Weight (lb)*</label>
-                    <input type="number" name="$pet-weight" required>
+                <button id="add-pet-button-3">+ Add another pet</button>
+                <div id="pet4" class="pet_info">
+                    <span>Pet #4</span>
+                    <div class="label-and-input">
+                        <label for="$pet#4-name">Pet Name*</label>
+                        <input type="text" name="$pet#4-name">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#4-type">Type of Pet*</label>
+                        <select name="$pet#4-type">
+                            <option value="Dog" selected>Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#4-breed">Pet Breed (optional)</label>
+                        <input type="text" name="$pet#4-breed">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="$pet#4-weight">Pet Weight (lb)*</label>
+                        <input type="number" name="$pet#4-weight">
+                    </div>
                 </div>
+
                 <!-- <div class="label-and-input">
                     <label for="$services">What service(s) are you interested in?*</label>
                     <select name="$services" id="select-services" class="select-services" multiple>
@@ -132,8 +206,6 @@
                     </select>
                 </div> -->
 
-
-
                 <span id="form__note">*Please choose 2 preferred appointment times. Please note, <u>we are closed on
                         Sundays</u>.</span>
                 <div class="label-and-input">
@@ -142,16 +214,8 @@
                         <input type="date" name="$appointment-time-1" required>
                         <!-- <input type="time" name="$appointment-time-1" min="08:00:00" max="17:30:00" required> -->
                         <select name="$appointment-time-1">
-                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
-                            <option value="9:00 - 10:00">9:00 - 10:00</option>
-                            <option value="10:00 - 11:00">10:00 - 11:00</option>
-                            <option value="11:00 - 12:00">11:00 - 12:00</option>
-                            <option value="12:00 - 13:00">12:00 - 13:00</option>
-                            <option value="13:00 - 14:00">13:00 - 14:00</option>
-                            <option value="14:00 - 15:00">14:00 - 15:00</option>
-                            <option value="15:00 - 16:00">15:00 - 16:00</option>
-                            <option value="16:00 - 17:00">16:00 - 17:00</option>
-                            <option value="After 17:00">After 17:00</option>
+                            <option value="8:00 - noon" selected>8:00 - noon</option>
+                            <option value="noon - 17:30">noon - 17:30</option>
                         </select>
                     </div>
                 </div>
@@ -161,16 +225,8 @@
                         <input type="date" name="$appointment-time-2" required>
                         <!-- <input type="time" name="$appointment-time-2" min="08:00:00" max="17:30:00" required> -->
                         <select name="$appointment-time-2">
-                            <option value="8:00 - 9:00" selected>8:00 - 9:00</option>
-                            <option value="9:00 - 10:00">9:00 - 10:00</option>
-                            <option value="10:00 - 11:00">10:00 - 11:00</option>
-                            <option value="11:00 - 12:00">11:00 - 12:00</option>
-                            <option value="12:00 - 13:00">12:00 - 13:00</option>
-                            <option value="13:00 - 14:00">13:00 - 14:00</option>
-                            <option value="14:00 - 15:00">14:00 - 15:00</option>
-                            <option value="15:00 - 16:00">15:00 - 16:00</option>
-                            <option value="16:00 - 17:00">16:00 - 17:00</option>
-                            <option value="After 17:00">After 17:00</option>
+                            <option value="8:00 - noon" selected>8:00 - noon</option>
+                            <option value="noon - 17:30">noon - 17:30</option>
                         </select>
                     </div>
                 </div>
@@ -191,14 +247,6 @@
                     <div class="label-and-input-horizontal">
                         <input type="checkbox" name="$services" value="Dog - Paw Cream & Massage">
                         <label for="$services">Dog - Paw Cream & Massage</label>
-                    </div>
-                    <div class="label-and-input-horizontal">
-                        <input type="checkbox" name="$services" value="Dog - Ear Cleaning">
-                        <label for="$services">Dog - Ear Cleaning</label>
-                    </div>
-                    <div class="label-and-input-horizontal">
-                        <input type="checkbox" name="$services" value="Dog - Nail Clipping & Grinding">
-                        <label for="$services">Dog - Nail Clipping & Grinding</label>
                     </div>
                     <div class="label-and-input-horizontal">
                         <input type="checkbox" name="$services" value="Dog - Nail Paint">
