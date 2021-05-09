@@ -70,6 +70,54 @@ main h1 {
     background-image: url(../picture/gallery-dog6.jpeg);
 }
 
+.image:nth-of-type(6) {
+    background-image: url(../picture/gallery-dog6.jpeg);
+}
+
+.image:nth-of-type(7) {
+    background-image: url(../picture/store1.jpeg);
+}
+
+.image:nth-of-type(8) {
+    background-image: url(../picture/store2.jpeg);
+}
+
+.image:nth-of-type(9) {
+    background-image: url(../picture/store3.jpeg);
+}
+
+.image:nth-of-type(10) {
+    background-image: url(../picture/store4.jpeg);
+}
+
+.image:nth-of-type(11) {
+    background-image: url(../picture/store5.jpeg);
+}
+
+.image:nth-of-type(12) {
+    background-image: url(../picture/store6.jpeg);
+}
+
+.image:nth-of-type(13) {
+    background-image: url(../picture/store7.jpeg);
+}
+
+.image:nth-of-type(14) {
+    background-image: url(../picture/store8.jpeg);
+}
+
+.image:nth-of-type(15) {
+    background-image: url(../picture/store9.jpeg);
+}
+
+.image:nth-of-type(16) {
+    background-image: url(../picture/store10.jpeg);
+}
+
+.image:nth-of-type(17) {
+    background-image: url(../picture/store11.jpeg);
+}
+
 /* Footer: start */
 footer {
     padding: 2rem 0 1rem;

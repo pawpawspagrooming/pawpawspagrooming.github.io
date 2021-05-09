@@ -20,7 +20,8 @@ address,
 label,
 input,
 fieldset,
-legend {
+legend,
+button {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -80,6 +81,31 @@ label,
     padding: 0.5rem;
     border-radius: 5px;
     border: 2px solid rgba(128, 128, 128, 0.5);
+}
+
+#pet2, #pet3, #pet4 {
+    display: none;
+}
+
+button {
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    background-color: transparent;
+    position: relative;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    transition: ease-in 0.2s;
+}
+
+button:hover {
+    background-color: #0375FF;
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+#add-pet-button-2,
+#add-pet-button-3 {
+    display: none;
 }
 
 #form__note {
