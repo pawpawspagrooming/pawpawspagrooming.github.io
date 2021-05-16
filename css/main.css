@@ -77,7 +77,7 @@ section:not(:last-of-type) {
 }
 
 #promotion__card {
-    max-width: 90vw;
+    max-height: 80vh;
 }
 /* Section promotion: end */
 
