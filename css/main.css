@@ -112,6 +112,10 @@ section:not(:last-of-type) {
     align-items: center;
 }
 
+#service__walk-in {
+    max-width: 90vw;
+}
+
 .service {
     display: flex;
     flex-direction: column;
@@ -371,5 +375,17 @@ section:not(:last-of-type) {
         padding: 12rem 8rem 6rem;
         margin: 0 auto;
         font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #service__walk-in {
+        max-width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #service__walk-in {
+        max-width: 50vw;
     }
 }
