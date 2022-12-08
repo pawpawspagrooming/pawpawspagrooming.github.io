@@ -379,13 +379,15 @@ section:not(:last-of-type) {
 }
 
 @media only screen and (min-width: 800px) {
-    #service__walk-in {
+    #service__walk-in,
+    #price-table-2022 {
         max-width: 70vw;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    #service__walk-in {
+    #service__walk-in,
+    #price-table-2022 {
         max-width: 50vw;
     }
 }
