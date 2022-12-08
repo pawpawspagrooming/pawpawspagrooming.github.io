@@ -112,7 +112,7 @@ section:not(:last-of-type) {
     align-items: center;
 }
 
-#service__walk-in {
+#service__walk-in, #price-table-2022 {
     max-width: 90vw;
 }
 
